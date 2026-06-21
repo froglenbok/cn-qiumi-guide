@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>球迷网 — 日常查询与对照阅读</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f9fafb;
+      color: #1a1e2a;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 2.4rem 1.5rem;
+    }
+    /* hero */
+    .hero {
+      margin-bottom: 3.2rem;
+      text-align: left;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0b0f19;
+      margin-bottom: 0.6rem;
+    }
+    .hero .sub {
+      font-size: 1rem;
+      color: #4a4f5e;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+    /* section */
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0b0f19;
+      margin: 2.2rem 0 1rem 0;
+      letter-spacing: -0.01em;
+      border-bottom: 0.5px solid #d8dce5;
+      padding-bottom: 0.4rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.2rem;
+      margin: 1.2rem 0 1.6rem 0;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.2rem 1rem 1rem 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02), 0 0 0 1px rgba(0,0,0,0.02);
+      transition: box-shadow 0.15s ease;
+    }
+    .card:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 0 0 1px #cdd2dc;
+    }
+    .card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: #121624;
+    }
+    .card p {
+      font-size: 0.85rem;
+      color: #4a4f5e;
+      line-height: 1.5;
+    }
+    .text-block {
+      font-size: 0.95rem;
+      margin: 1.2rem 0 1.8rem 0;
+      color: #262b38;
+    }
+    .text-block p {
+      margin-bottom: 0.9rem;
+    }
+    .faq-item {
+      margin: 1.2rem 0;
+    }
+    .faq-item strong {
+      display: block;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.1rem;
+      color: #0b0f19;
+    }
+    .faq-item span {
+      font-size: 0.9rem;
+      color: #3d4356;
+      line-height: 1.6;
+    }
+    .bottom-links {
+      margin: 2.8rem 0 1rem 0;
+      padding-top: 1.6rem;
+      border-top: 0.5px solid #d8dce5;
+      font-size: 0.9rem;
+      color: #3d4356;
+    }
+    .bottom-links a {
+      color: #1e2a4a;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-weight: 500;
+    }
+    .bottom-links a:hover {
+      color: #101725;
+    }
+    .note {
+      font-size: 0.85rem;
+      color: #5d6271;
+      background: #f2f4f8;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      margin: 1.8rem 0;
+    }
+    @media (max-width: 480px) {
+      .container {
+        padding: 1.8rem 1rem;
+      }
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+      .card-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- hero -->
+  <div class="hero">
+    <h1>日常查询 · 对照 · 延伸阅读</h1>
+    <div class="sub">
+      从联赛数据到转会传闻，从战术笔记到历史对照 —— 围绕足球信息做更系统的日常整理。
+    </div>
+  </div>
+
+  <!-- 优势区（卡片） -->
+  <div class="section-title">信息结构优势</div>
+  <div class="card-grid">
+    <div class="card">
+      <h3>多源对照</h3>
+      <p>同一事件整合来自不同信源的基础数据与上下文，减少碎片切换。</p>
+    </div>
+    <div class="card">
+      <h3>场景索引</h3>
+      <p>按比赛日、转会窗、赛季复盘等真实场景组织条目，方便回溯。</p>
+    </div>
+    <div class="card">
+      <h3>延伸链</h3>
+      <p>每条关键信息后附带背景阅读或相关记录，降低自行检索成本。</p>
+    </div>
+    <div class="card">
+      <h3>轻量速查</h3>
+      <p>去除非必要视觉元素，聚焦文本与结构化列表，提升查询效率。</p>
+    </div>
+  </div>
+
+  <!-- 说明区（从日常查询与对照切入） -->
+  <div class="section-title">从日常查询到对照阅读</div>
+  <div class="text-block">
+    <p>足球信息的消费方式通常分为两类：一类是即时查询——某个球员的出场时间、某支球队的近期战绩、某笔转会的确认状态；另一类是横向对照——不同联赛的节奏差异、相似战术体系下的执行表现、同一球员在不同赛季的角色变化。</p>
+    <p><a href="https://cn-qiumi.com" style="color: #1e2a4a; text-decoration: underline; text-underline-offset: 2px; font-weight: 500;">球迷网</a> 围绕这两类需求搭建信息框架：优先呈现可对照的原始数据与上下文，而不是孤立的结果。每条记录都尽可能附带来源标注、关联条目或简短提示，帮助用户在浏览中自然完成从“查一下”到“再看看”的过渡。</p>
+    <p>例如查看一场联赛的赛后统计时，页面会同时列出该队近五场同类数据、主客场差异以及对手同期表现，让对照成为阅读流程的一部分。</p>
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <div class="section-title">常见问题摘要</div>
+  <div class="faq-item">
+    <strong>数据更新频率如何？</strong>
+    <span>主要联赛与杯赛数据在比赛日后 12 小时内完成基础更新；转会、伤病等动态信息视可靠信源确认后补充，不追抢先但求可溯源。</span>
+  </div>
+  <div class="faq-item">
+    <strong>是否包含深度分析或预测？</strong>
+    <span>不提供竞猜、预测或主观评级。页面内容以记录、整理、对照为主，深度分析部分会明确标注为独立作者观点，与基础记录区隔。</span>
+  </div>
+  <div class="faq-item">
+    <strong>移动端阅读体验如何？</strong>
+    <span>所有页面采用窄版式设计，文字与列表在手机浏览器上可自动适配，无需横向滚动。卡片与表格均经过响应式调整。</span>
+  </div>
+  <div class="faq-item">
+    <strong>能否自行补充或纠正信息？</strong>
+    <span>每页底部设有反馈入口，经核实后的修正会随下一次内容更新发布。当前暂不开放直接编辑。</span>
+  </div>
+
+  <!-- 提示/备注 -->
+  <div class="note">
+    ⚡ 日常使用建议：利用联赛赛季索引或球队档案页作为起点，通过内链跳转至相关赛事、球员或转会记录，逐步构建个人的阅读路径。
+  </div>
+
+  <!-- 底部链接 -->
+  <div class="bottom-links">
+    <span>信息平台：</span>
+    <a href="https://cn-qiumi.com">球迷网</a>
+    <span style="margin: 0 0.6rem">·</span>
+    <a href="https://cn-qiumi.com" style="text-decoration: none; border-bottom: 1px dotted #9ca3af;">球迷网</a>
+    <span style="margin: 0 0.6rem">·</span>
+    <a href="https://cn-qiumi.com" style="text-decoration: none; border-bottom: 1px dotted #9ca3af;">球迷网</a>
+    <div style="margin-top: 0.8rem; font-size: 0.8rem; color: #6b7280;">
+      基于可溯源的公开信息整理 · 不构成任何投资或参与建议
+    </div>
+  </div>
+</div>
+</body>
+</html>
